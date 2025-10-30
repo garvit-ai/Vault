@@ -1,0 +1,85 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d799d7c01c8b2c5e46a90bf0df8e044d556700c63fe57986c5c581c66a0c1202
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2025-05-29
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a56de6153009333326ad05c66098041889b9015d8f43a91b70a3a064725f8e03
+Status: install ok installed
+
+Package: vcpkg-tool-meson
+Version: 1.9.0
+Port-Version: 3
+Depends: vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 995aa57a3c578d4c8cc7467651077862766e477accd8f2b733b57b247b02685e
+Description: Meson build system
+Status: install ok installed
+
+Package: pkgconf
+Version: 2.5.1
+Port-Version: 4
+Depends: vcpkg-tool-meson
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ed2581589c7f9a94d31f5ce37a69e92bf59b0d1ee7f1ecfc7884507d0e767772
+Description: pkgconf is a program which helps to configure compiler and linker flags for development libraries. It is similar to pkg-config from freedesktop.org.
+Status: install ok installed
+
+Package: vcpkg-pkgconfig-get-modules
+Version: 2024-04-03
+Depends: pkgconf
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5953f3e6c911152bec03b63e8e57eb402e11cc674cb2aa5d1303661ec08808f6
+Status: install ok installed
+
+Package: vcpkg-msbuild
+Version: 2023-08-08
+Depends: vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5895c85e0011bdd6b9fa7733d4526d8f6111fa8eeb778d23671d074239f5447e
+Status: install ok installed
+
+Package: libsodium
+Version: 1.0.20
+Port-Version: 3
+Depends: vcpkg-msbuild
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 68b0aa990480ebcddb6f5d771ab29db60d951485ab39784381266177b8b293c6
+Description: A modern and easy-to-use crypto library
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 1c524e36e7e86e6e12771e52677cae124eff149e9031547285c8a87ab5ca5edc
+Status: install ok installed
+
+Package: sqlite3
+Version: 3.50.4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4643d2ae8b64c21837ce773506c7048a7de25f5bd4489f543902eb99d0d40424
+Description: SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+Default-Features: json1
+Status: install ok installed
+
+Package: sqlite3
+Feature: json1
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable JSON functionality for sqlite3
+Status: install ok installed
+

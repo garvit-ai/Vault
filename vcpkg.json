@@ -1,0 +1,8 @@
+{
+    "name": "password-vault",
+    "version-string": "1.0.0",
+    "dependencies": [
+        "sqlite3",
+        "libsodium"
+    ]
+}

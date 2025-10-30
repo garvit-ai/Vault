@@ -1,0 +1,10 @@
+^C:\USERS\GARRV\DESKTOP\PASSWORD MANAGER\BUILD\CMAKEFILES\A77B62A331A6175EC8E1492C81DAA4BB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/garrv/Desktop/Password Manager" "-BC:/Users/garrv/Desktop/Password Manager/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/garrv/Desktop/Password Manager/build/PasswordVault.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

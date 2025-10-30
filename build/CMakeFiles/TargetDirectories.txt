@@ -1,0 +1,3 @@
+C:/Users/garrv/Desktop/Password Manager/build/CMakeFiles/vault_cli.dir
+C:/Users/garrv/Desktop/Password Manager/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/garrv/Desktop/Password Manager/build/CMakeFiles/ZERO_CHECK.dir
